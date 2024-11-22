@@ -1,0 +1,80 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8DC;
+    color: #333;
+}
+
+header {
+    background-color: #FF0000;
+    color: #FFF;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Seções */
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #FF0000;
+    margin-bottom: 10px;
+}
+
+.order {
+    background-color: #FFF3CD;
+    padding: 10px;
+    border: 1px solid #FFD700;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.order p {
+    margin: 5px 0;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.status-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.delivered .status-icon {
+    color: green;
+}
+
+.load-more {
+    background-color: #FF0000;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto 0;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="pedidos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="goBack()">←</button>
+        <h1>Pedidos</h1>
+    </header>
+    <main>
+        <section class="current-orders">
+            <h2>Meus pedidos</h2>
+            <div class="order">
+                <p>Hambúrguer - R$ 10,00</p>
+                <p>Refrigerante - R$ 5,00</p>
+                <p><strong>TOTAL: R$ 15,00</strong></p>
+                <div class="status">
+                    <span class="status-icon">🚚</span>
+                    <span>A caminho</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-history">
+            <h2>Histórico</h2>
+            <div class="order">
+                <p>Coxinha - R$ 5,00</p>
+                <p>Suco - R$ 4,00</p>
+                <p><strong>TOTAL: R$ 15,00</strong></p>
+                <div class="status delivered">
+                    <span class="status-icon">✔️</span>
+                    <span>Entregue</span>
+                </div>
+            </div>
+            <div class="order">
+                <p>Sopa de feijão - R$ 8,00</p>
+                <p><strong>TOTAL: R$ 15,00</strong></p>
+                <div class="status delivered">
+                    <span class="status-icon">✔️</span>
+                    <span>Entregue</span>
+                </div>
+            </div>
+        </section>
+
+        <button class="load-more">Ver mais</button>
+    </main>
+</body>
+</html>

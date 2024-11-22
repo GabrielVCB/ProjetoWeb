@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="goBack()">←</button>
+        <h1>Carrinho de Compras</h1>
+    </header>
+    <main>
+        <div id="cart-items">
+            <!-- Itens do carrinho gerados dinamicamente -->
+        </div>
+        <div class="cart-footer">
+            <h3>Forma de pagamento:</h3>
+            <select id="payment-method">
+                <option value="" selected>Selecione</option>
+                <option value="pix">Pix</option>
+                <option value="cartao">Débito / Crédito</option>
+                <option value="dinheiro">Dinheiro</option>
+            </select>
+
+            <h3>Entregar no endereço:</h3>
+            <input type="text" id="address" placeholder="Rua, número, complemento">
+
+            <h3>Telefone para contato:</h3>
+            <input type="tel" id="phone" placeholder="(81) 91234-5678">
+
+            <div class="total">
+                <h3 id="total-price">TOTAL: R$ 0,00</h3>
+            </div>
+
+            <button class="finalize-button" onclick="finalizeOrder()">Finalizar Pedido</button>
+        </div>
+    </main>
+</body>
+</html>
