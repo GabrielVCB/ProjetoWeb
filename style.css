@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8DC;
+    color: #333;
+}
+
+header {
+    background-color: #FF0000;
+    color: #FFF;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.back-button, .menu-icon {
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#sidebar {
+    width: 0;
+    background-color: #FF0000;
+    color: #FFF;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.3s;
+    padding: 1em;
+}
+
+#sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.product {
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.load-more, .finalize-button {
+    background-color: #FF0000;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.quantity-controls button {
+    padding: 0.5em;
+    background-color: #FF0000;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cart-footer, .order {
+    padding: 1em;
+    background-color: #FFF8DC;
+}
+
+.cart-footer input,
+.cart-footer select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
